@@ -577,9 +577,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.0029762983
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0477107
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.00048214197
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: m_Size.x
+      value: 0.39049792
+      objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
       propertyPath: minDistanceFromEnv
-      value: 0.03
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
       propertyPath: numOfAirJumps
@@ -591,7 +607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
       propertyPath: groundStopDistance
-      value: 0.03
+      value: 0.333
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
       propertyPath: changeDirectionInAir
@@ -599,19 +615,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
       propertyPath: timeToGroundSpeed
-      value: 0.7
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
       propertyPath: envCheckDistance
-      value: 0.4
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
       propertyPath: jumpHeight
-      value: 2
+      value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
       propertyPath: groundSpeed
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
       propertyPath: enableCornerGrabs
@@ -620,6 +636,42 @@ PrefabInstance:
     - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
       propertyPath: wallJumpMultiplier
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: movingPlatformLayerMask.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: wallJumpAngle
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: numOfIterations
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: fallSpeed
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: fastFallSpeed
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: gravityMultiplier
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: fastFallGravityMultiplier
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: timeToAirSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
+      propertyPath: jumpWindowWhenFalling
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f53f0e5cd92ba5148aace93d59b06aaf, type: 3}
@@ -1133,8 +1185,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474587424}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.8400002, y: 2.56, z: -6.05}
-  m_LocalScale: {x: 0.5, y: 4, z: 1}
+  m_LocalPosition: {x: -3.8400002, y: 1.54, z: -6.05}
+  m_LocalScale: {x: 0.75, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 1562140945}
   m_RootOrder: 0
@@ -1205,7 +1257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903257935}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.6399994, y: -3.13, z: -6.079307}
+  m_LocalPosition: {x: 3.86, y: -3.13, z: -6.079307}
   m_LocalScale: {x: 1, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 1562140945}
