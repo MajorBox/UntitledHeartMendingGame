@@ -10,7 +10,7 @@ public class PlayerController2D : MonoBehaviour
     private bool _restored = true;
     private bool _enableOneWayPlatforms;
     private bool _oneWayPlatformsAreWalls;
-
+    public GameManager gameManager;
     // Use this for initialization
     void Start()
     {
@@ -41,6 +41,12 @@ public class PlayerController2D : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!gameManager.started)
+        {
+            return;
+        }
+            
+
         // use last state to restore some ladder specific values
         if (_motor.motorState != PlatformerMotor2D.MotorState.FreedomState)
         {
