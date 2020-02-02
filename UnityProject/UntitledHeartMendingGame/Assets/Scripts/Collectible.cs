@@ -4,7 +4,7 @@ public class Collectible : MonoBehaviour
 {
     public GameManager gameManager;
     public BoxCollider2D box_collider;
-    public GameObject PS_Kokoro;
+    //public GameObject PS_Kokoro;
     public Transform GO_Transf;
 
 
@@ -28,7 +28,7 @@ public class Collectible : MonoBehaviour
             }
             
             gameManager.collectibleCount = gameManager.collectibleCount + 1;
-            Instantiate(PS_Kokoro,GO_Transf);
+            //Instantiate(PS_Kokoro,GO_Transf);
             gameObject.SetActive(false);
 
 
