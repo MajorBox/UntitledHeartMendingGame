@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Collectible
+  - DeathTrigger
   layers:
   - Default
   - TransparentFX
