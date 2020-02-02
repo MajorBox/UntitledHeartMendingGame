@@ -2333,7 +2333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841166846}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.62, y: -4.28, z: -10}
+  m_LocalPosition: {x: 9.619999, y: -4.28, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1968434262}
@@ -2354,7 +2354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FocusTracksTarget: 1
   m_FocusOffset: 0
-  m_Profile: {fileID: 11400000, guid: 7372dc7493cd24e49ac8af1298b9bbf9, type: 2}
+  m_Profile: {fileID: 11400000, guid: 392b30bad062d1d47b45d07c713515f3, type: 2}
 --- !u!1 &870072663
 GameObject:
   m_ObjectHideFlags: 0
@@ -3140,7 +3140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 7372dc7493cd24e49ac8af1298b9bbf9, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 392b30bad062d1d47b45d07c713515f3, type: 2}
   isGlobal: 1
   blendDistance: 0
   weight: 1
@@ -3653,6 +3653,11 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 737702999}
+    - target: {fileID: 8515079830327482416, guid: 43d9cbaf2fd791b4d825faef13a96d03,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8515079830327482419, guid: 43d9cbaf2fd791b4d825faef13a96d03,
         type: 3}
       propertyPath: m_Name
@@ -5328,7 +5333,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
