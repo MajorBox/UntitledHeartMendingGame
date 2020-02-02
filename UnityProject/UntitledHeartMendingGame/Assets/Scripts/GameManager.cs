@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour
                 countdownText.text = "YOU WIN";
                 timerText.text = "";
                 Invoke("ChangeLevel", 2.0f);
-                ChangeLevel();
+                //ChangeLevel();
             }
             else
             {
