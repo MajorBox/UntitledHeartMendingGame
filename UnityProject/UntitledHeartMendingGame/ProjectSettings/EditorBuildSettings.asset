@@ -4,5 +4,29 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 6d343ac22f81c504e8b52c7e63b3c8bd
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 523f1dcc7fb60ee49a9627d684edf711
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 2f402671f72d38b438d81a9d24dc4ee0
+  - enabled: 1
+    path: Assets/Scenes/Nivel 1 - Negacion y Aislamiento.unity
+    guid: 2806e52db0151c341a65cee977c4d9ce
+  - enabled: 1
+    path: Assets/Scenes/NIvel 2 - Ira.unity
+    guid: fcefff7e0dd65b149992a84f579e3ce3
+  - enabled: 1
+    path: Assets/Scenes/NIvel 3 - Negociacion.unity
+    guid: f0ca85a2e15d3444eb0e0cb0d2bc6011
+  - enabled: 1
+    path: Assets/Scenes/Nivel 4 - Depression.unity
+    guid: e4f2358e8cd91f1419762b4dbec550d9
+  - enabled: 1
+    path: Assets/Scenes/NIvel 5 - Aceptacion.unity
+    guid: 81b9520ed01f4654da98ad1a4488271e
   m_configObjects: {}
