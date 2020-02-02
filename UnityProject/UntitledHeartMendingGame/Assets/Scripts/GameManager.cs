@@ -37,8 +37,8 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene(sceneName: "Nivel 1 - Negacion y Aislamiento");
                 break;
 
-            case "Nivel 2 - Ira":
-                SceneManager.LoadScene(sceneName: "Nivel 2 - Ira");
+            case "NIvel 2 - Ira":
+                SceneManager.LoadScene(sceneName: "NIvel 2 - Ira");
                 break;
 
             case "NIvel 3 - Negociacion":
@@ -61,10 +61,10 @@ public class GameManager : MonoBehaviour
         switch (SceneManager.GetActiveScene().name)
         {
             case "Nivel 1 - Negacion y Aislamiento":
-                SceneManager.LoadScene(sceneName: "Nivel 2 - Ira");
+                SceneManager.LoadScene(sceneName: "NIvel 2 - Ira");
                 break;
 
-            case "Nivel 2 - Ira":
+            case "NIvel 2 - Ira":
                 SceneManager.LoadScene(sceneName: "NIvel 3 - Negociacion");
                 break;
 
