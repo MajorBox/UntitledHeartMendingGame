@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;   
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class GameManager : MonoBehaviour
     public bool completed;
     public Text timerText;
     public Text countdownText;
+    public int lost = 0; 
 
     public bool victorySound;
     public List<Sprite> Sprites;
@@ -26,6 +29,60 @@ public class GameManager : MonoBehaviour
         victorySound = false;
     }
 
+    public void LoseLevel()
+    {
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "Nivel 1 - Negacion y Aislamiento":
+                SceneManager.LoadScene(sceneName: "Nivel 1 - Negacion y Aislamiento");
+                break;
+
+            case "Nivel 2 - Ira":
+                SceneManager.LoadScene(sceneName: "Nivel 2 - Ira");
+                break;
+
+            case "NIvel 3 - Negociacion":
+                SceneManager.LoadScene(sceneName: "NIvel 3 - Negociacion");
+                break;
+
+            case "Nivel 4 - Depression":
+                SceneManager.LoadScene(sceneName: "Nivel 4 - Depression");
+                break;
+
+            case "NIvel 5 - Aceptacion":
+                SceneManager.LoadScene(sceneName: "NIvel 5 - Aceptacion");
+                break;
+        }
+    }
+
+
+    public void ChangeLevel()
+    {
+        switch (SceneManager.GetActiveScene().name)
+        {
+            case "Nivel 1 - Negacion y Aislamiento":
+                SceneManager.LoadScene(sceneName: "Nivel 2 - Ira");
+                break;
+
+            case "Nivel 2 - Ira":
+                SceneManager.LoadScene(sceneName: "NIvel 3 - Negociacion");
+                break;
+
+            case "NIvel 3 - Negociacion":
+                SceneManager.LoadScene(sceneName: "Nivel 4 - Depression");
+                break;
+
+            case "Nivel 4 - Depression":
+                SceneManager.LoadScene(sceneName: "NIvel 5 - Aceptacion");
+                break;
+
+            case "NIvel 5 - Aceptacion":
+                SceneManager.LoadScene(sceneName: "Menu");
+                break;
+        }
+    }
+
+
     private void Update()
     {
         if(completed)
@@ -36,11 +93,15 @@ public class GameManager : MonoBehaviour
             {
                 countdownText.text = "YOU WIN";
                 timerText.text = "";
+                Invoke("ChangeLevel", 2.0f);
+                //ChangeLevel();
             }
             else
             {
                 countdownText.text = "YOU LOSE";
                 timerText.text = "";
+                Invoke("LoseLevel", 2.0f);
+                //LoseLevel();
             }
         }
         else
@@ -82,6 +143,8 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+
 
     public void CheckWinCondition()
     {
