@@ -9,7 +9,7 @@ public class Collectible : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             gameManager.collectibleCount = gameManager.collectibleCount + 1;
-            this.gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
 }
