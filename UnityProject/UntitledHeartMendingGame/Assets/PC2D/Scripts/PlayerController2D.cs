@@ -48,7 +48,7 @@ public class PlayerController2D : MonoBehaviour
 
         if (gameManager.completed)
         {
-            return;
+            this.gameObject.GetComponent<PlatformerMotor2D>().enabled = false; 
         }
 
 
