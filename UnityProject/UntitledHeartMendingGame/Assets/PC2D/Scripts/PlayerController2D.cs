@@ -45,7 +45,12 @@ public class PlayerController2D : MonoBehaviour
         {
             return;
         }
-            
+
+        if (gameManager.completed)
+        {
+            return;
+        }
+
 
         // use last state to restore some ladder specific values
         if (_motor.motorState != PlatformerMotor2D.MotorState.FreedomState)
