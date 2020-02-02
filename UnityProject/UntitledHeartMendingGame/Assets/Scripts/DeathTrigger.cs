@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Collectible : MonoBehaviour
+public class DeathTrigger : MonoBehaviour
 {
     public GameManager gameManager;
 
