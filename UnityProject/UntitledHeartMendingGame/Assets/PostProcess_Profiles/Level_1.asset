@@ -1434,10 +1434,10 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   shutterAngle:
-    overrideState: 0
+    overrideState: 1
     value: 270
   sampleCount:
-    overrideState: 0
+    overrideState: 1
     value: 10
 --- !u!114 &-1470107519321609257
 MonoBehaviour:
@@ -1575,7 +1575,7 @@ MonoBehaviour:
     value: -12
   thicknessModifier:
     overrideState: 1
-    value: 1
+    value: 1.25
   directLightingStrength:
     overrideState: 1
     value: 0
@@ -1607,7 +1607,7 @@ MonoBehaviour:
     defaultState: 1
   intensity:
     overrideState: 1
-    value: 0.392
+    value: 0.229
   fastMode:
     overrideState: 1
     value: 0
